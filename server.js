@@ -29,7 +29,7 @@ app.use(logger("dev"));
 
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/mongoscrap", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mongoscrap", { useNewUrlParser: true });
 
 // Routes
 require("./routes/apiRoutes")(app);
