@@ -8,6 +8,6 @@
 
 
 **The app can be accessed at:**
- https://mongo-scrape1.herokuapp.com/
- https://github.com/tejsubedi/MongoScrape
+-   https://mongo-scrape1.herokuapp.com/
+-   https://github.com/tejsubedi/MongoScrape
 
