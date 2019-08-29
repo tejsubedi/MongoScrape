@@ -9,11 +9,7 @@ module.exports = function (app) {
     app.get("/", function (req, res) {
         res.render("index");
     });
-    app.get("/index", function (req, res) {
-        res.render("index");
-    });
-
-
+    
     // A GET route for scraping the echoJS website
     app.get("/Scrap", function (req, res) {
         // First, we grab the body of the html with axios
@@ -25,7 +21,6 @@ module.exports = function (app) {
             var results = [];
             $("article.css-8atqhb").each(function (i, element) {
                 var result = {};
-
                 result.title = $(element)
                     .find("h2")
                     .text();
